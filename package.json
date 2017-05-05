@@ -7,7 +7,6 @@
   "author": "Mees van Dijk",
   "license": "MIT",
   "dependencies": {
-    "debug": "^2.6.6",
     "exists-sync": "^0.0.4",
     "inquirer": "^3.0.6"
   },
