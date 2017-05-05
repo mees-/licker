@@ -1,0 +1,15 @@
+{
+  "name": "licker",
+  "version": "1.0.0",
+  "description": "License inserter for new projects",
+  "main": "index.js",
+  "repository": "mees-/licker",
+  "author": "Mees van Dijk",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.6.6",
+    "exists-sync": "^0.0.4",
+    "inquirer": "^3.0.6"
+  },
+  "bin": "./index.js"
+}
