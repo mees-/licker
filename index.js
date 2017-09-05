@@ -9,10 +9,7 @@ if (existsSync('./LICENSE')) {
   process.exit(0)
 }
 
-const preCollected = {
-  name: null,
-  licenseIndex: null,
-}
+const preCollected = {}
 
 const licenseChoices = [
   {
@@ -51,7 +48,7 @@ inquirer
     {
       type: 'input',
       name: 'name',
-      default: preCollected.name || undefined,
+      default: preCollected.name,
       message: 'enter your name:',
     },
     {
@@ -65,7 +62,7 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'pick a license:',
-      default: preCollected.licenseIndex || 0,
+      default: preCollected.licenseIndex,
       choices: licenseChoices,
     },
   ])
@@ -80,7 +77,7 @@ inquirer
   })
   .catch(e => {
     console.error('Something bad happened 😨')
-    if (process.env.DEBUG.includes('lick')) {
+    if (process.env.DEBUG.includes('licker')) {
       console.error(e)
     }
   })
