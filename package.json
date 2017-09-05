@@ -1,6 +1,6 @@
 {
   "name": "licker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "License inserter for new projects",
   "main": "index.js",
   "scripts": {
