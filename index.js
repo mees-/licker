@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs')
+const { resolve } = require('path')
 const licenses = require('./licenses.json')
 const inquirer = require('inquirer')
 const existsSync = require('exists-sync')
@@ -27,7 +28,7 @@ const licenseChoices = [
 ]
 
 try {
-  const pack = require('./package.json')
+  const pack = require(resolve('./package.json'))
   if (pack.author) {
     preCollected.name = pack.author
   }
