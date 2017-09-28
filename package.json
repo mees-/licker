@@ -7,7 +7,7 @@
     "format": "prettier --single-quote --trailing-comma all --no-semi --write 'src/**/*.js' package.json"
   },
   "repository": "mees-/licker",
-  "author": "Mees van Dijk",
+  "author": "Mees van Dijk <mees@itisme.es> (http://mees.io)",
   "license": "MIT",
   "dependencies": {
     "exists-sync": "^0.0.4",
